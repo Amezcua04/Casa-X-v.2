@@ -1,4 +1,5 @@
- /* --------------------------------------------------
+
+/* --------------------------------------------------
   * © Copyright 2023 - Blaxcut by Designesia
   * --------------------------------------------------*/
 (function($) {
@@ -40,6 +41,18 @@
              vscroll = 0;
          }
      }
+
+
+     document.addEventListener('DOMContentLoaded', function () {
+        var jarallax = new Jarallax();
+        jarallax.addAnimation('.jarallax', {
+            type: 'scroll',
+            speed: 0.5,
+            videoSrc: 'local-video-1.mp4',
+            preload: true // Agrega esta línea para pre-cargar el video
+        });
+    });
+    
      /* --------------------------------------------------
       * plugin | magnificPopup
       * --------------------------------------------------*/
